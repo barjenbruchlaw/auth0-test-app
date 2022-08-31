@@ -3,7 +3,7 @@
   import auth from "../authService.js"
   import TaskItem from "../components/TaskItem.svelte"
   let newTask
-  import { user, isAuthenticated, popupOpen } from "./store.js"
+  import { user, isAuthenticated, popupOpen } from "../store.js"
 
   function login() {
     auth.loginWithPopup(auth0Client)
